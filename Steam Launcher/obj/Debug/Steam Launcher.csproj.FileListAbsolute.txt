@@ -1,0 +1,28 @@
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\categoryIcon@2x.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\categoryIcon.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\icon@2x.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\icon.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\pluginAction@2x.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\pluginAction.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\pluginIcon@2x.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Images\pluginIcon.png
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\PropertyInspector\PluginActionPI.html
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\PropertyInspector\PluginActionPI.js
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\manifest.json
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Steam Launcher.exe.config
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Steam Launcher.exe
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Steam Launcher.pdb
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\CommandLine.dll
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Newtonsoft.Json.dll
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\NLog.dll
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\streamdeck-client-csharp.dll
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\StreamDeckTools.dll
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\System.Drawing.Common.dll
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\CommandLine.xml
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\Newtonsoft.Json.xml
+C:\Projects\steam-launcher-cs\Steam Launcher\bin\Debug\Steam_Launcher.sdPlugin\NLog.xml
+C:\Projects\steam-launcher-cs\Steam Launcher\obj\Debug\Steam Launcher.exe.config
+C:\Projects\steam-launcher-cs\Steam Launcher\obj\Debug\Steam Launcher.csproj.CoreCompileInputs.cache
+C:\Projects\steam-launcher-cs\Steam Launcher\obj\Debug\Steam Launcher.csproj.CopyComplete
+C:\Projects\steam-launcher-cs\Steam Launcher\obj\Debug\Steam Launcher.exe
+C:\Projects\steam-launcher-cs\Steam Launcher\obj\Debug\Steam Launcher.pdb

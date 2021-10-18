@@ -1,0 +1,37 @@
+{
+  "Actions": [
+    {
+      "Icon": "Images/icon",
+      "Name": "Recent Game Launcher",
+      "States": [
+        {
+          "Image": "Images/pluginAction",
+          "TitleAlignment": "middle",
+          "FontSize": "12"
+        }
+      ],
+      "SupportedInMultiActions": true,
+      "Tooltip": "TODO_ENTER_TOOLTIP",
+      "UUID": "steamlauncher.recentlyplayed",
+      "PropertyInspectorPath": "PropertyInspector/PluginActionPI.html"
+    }
+  ],
+  "Author": "Evan Holtrop",
+  "Name": "SteamLauncher",
+  "Description": "TODO_ENTER_PLUGIN_DESCRIPTION",
+  "Icon": "Images/pluginIcon",
+  "Version": "1.0",
+  "CodePath": "steamlauncher",
+  "Category": "Custom",
+  "CategoryIcon": "Images/categoryIcon",
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "4.9"
+  }
+}
