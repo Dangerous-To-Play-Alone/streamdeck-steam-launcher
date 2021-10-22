@@ -104,12 +104,16 @@ namespace Steam_Launcher
             Logger.Instance.LogMessage(TracingLevel.ERROR, content);
             var jObj = JObject.Parse(content);
 
+            var max = Int32.Parse(jObj["response"]["total_count"].ToString());
+
+            var index = Math.Min(max - 1, Int32.Parse(settings.index));
+
             try
             {
-                var name = jObj["response"]["games"][Int32.Parse(settings.index)]["name"].ToString();
-                appId = jObj["response"]["games"][Int32.Parse(settings.index)]["appid"].ToString();
+                var name = jObj["response"]["games"][index]["name"].ToString();
+                appId = jObj["response"]["games"][index]["appid"].ToString();
 
-                var imgId = jObj["response"]["games"][Int32.Parse(settings.index)]["img_icon_url"].ToString();
+                var imgId = jObj["response"]["games"][index]["img_icon_url"].ToString();
 
                 appImage = FetchImage(String.Format(STEAM_APP_ICON_URL, appId, imgId));
                 //appImage = SetImageFit(img);
@@ -144,84 +148,6 @@ namespace Steam_Launcher
 
             }
             return null;
-        }
-
-        private Bitmap SetImageFit(Bitmap img)
-        {
-            if (img == null)
-            {
-                return null;
-            }
-
-            Image tmpImage;
-            var newImage = Tools.GenerateGenericKeyImage(out Graphics graphics);
-            if (img.Width > img.Height)
-            {
-                tmpImage = (Bitmap)ResizeImageByHeight(img, newImage.Height);
-            }
-            else
-            {
-                tmpImage = (Bitmap)ResizeImageByWidth(img, newImage.Width);
-            }
-
-
-            int startX;
-            startX = (tmpImage.Width / 2) - (newImage.Width / 2);
-            if (startX < 0)
-            {
-                startX = 0;
-            }
-            graphics.DrawImage(tmpImage, new Rectangle(0, 0, newImage.Width, newImage.Height), new Rectangle(startX, 0, newImage.Width, newImage.Height), GraphicsUnit.Pixel);
-
-            return newImage;
-        }
-
-        private Image ResizeImageByHeight(Image img, int newHeight)
-        {
-            if (img == null)
-            {
-                return null;
-            }
-
-            int originalWidth = img.Width;
-            int originalHeight = img.Height;
-
-            // Figure out the ratio
-            double ratio = (double)newHeight / (double)originalHeight;
-            int newWidth = (int)(originalWidth * ratio);
-            return ResizeImage(img, newHeight, newWidth);
-        }
-
-        private Image ResizeImageByWidth(Image img, int newWidth)
-        {
-            if (img == null)
-            {
-                return null;
-            }
-
-            int originalWidth = img.Width;
-            int originalHeight = img.Height;
-
-            // Figure out the ratio
-            double ratio = (double)newWidth / (double)originalWidth;
-            int newHeight = (int)(originalHeight * ratio);
-            return ResizeImage(img, newHeight, newWidth);
-        }
-
-        private Image ResizeImage(Image original, int newHeight, int newWidth)
-        {
-            Image canvas = new Bitmap(newWidth, newHeight);
-            Graphics graphic = Graphics.FromImage(canvas);
-
-            //graphic.InterpolationMode = InterpolationMode.HighQualityBicubic;
-            //graphic.SmoothingMode = SmoothingMode.HighQuality;
-            //graphic.PixelOffsetMode = PixelOffsetMode.HighQuality;
-            //graphic.CompositingQuality = CompositingQuality.HighQuality;
-
-            graphic.Clear(Color.Black); // Padding
-            graphic.DrawImage(original, 0, 0, newWidth, newHeight);
-
-            return canvas;
         }
 
         public override void ReceivedGlobalSettings(ReceivedGlobalSettingsPayload payload) { }
